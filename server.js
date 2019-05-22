@@ -19,7 +19,8 @@ app.get('/',(req,res)=>{
     res.send(data);
 
 });
-var os = require('os');
+function showIp() {
+  var os = require('os');
 var ifaces = os.networkInterfaces();
 
 Object.keys(ifaces).forEach(function (ifname) {
@@ -41,7 +42,9 @@ Object.keys(ifaces).forEach(function (ifname) {
     ++alias;
   });
 });
-
+  
+}
+showIp();
 server.listen(3030, err => {
     if (err) {
         throw err
