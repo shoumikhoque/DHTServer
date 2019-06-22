@@ -14,3 +14,7 @@ git add .
 #to remove file from git cahce `git rm --cached <file>...`
 #to commit `git commit -m "commit name" 
 git commit -m "initial commit"
+#add git to github repo
+git remote add origin https://github.com/Prime38/Thesis.git
+#push to git repo
+git push -u origin master
